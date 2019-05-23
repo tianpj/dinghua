@@ -33,6 +33,16 @@ git checkout -- readme.txt
 
 12,删除文件
 rm a.txt
+使用  git status 知道你删除了a.txt 
+如果你确定删除a.txt
+git rm a.txt
+git commit -m "remove a.txt"
+这两行命令
+
+另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本：
+git checkout -- test.txt
+（只适用还没有做上面两行命令）
+
 
 13,git status 可以查看你做了什么操作
 
