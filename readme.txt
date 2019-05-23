@@ -46,6 +46,20 @@ git checkout -- test.txt
 
 13,git status 可以查看你做了什么操作
 
+14，管理库 GitHub
+	ssh-keygen -t rsa -C "youremail@example.com"
+	登陆GitHub，打开“Account settings”，“SSH Keys”页面：
+	点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容：
+	点“Add Key”，你就应该看到已经添加的Key：
+	
+15，上传文件到github
+git remote add origin https://github.com/tianpj/dinghua.git
+git push -u origin master
+
+16，现在本地提交就可以使用
+git push origin master
+	
+
 
 
 
