@@ -7,3 +7,13 @@ git init
 3，把一个文件放在git仓库里面
 git add readme.txt
 git commit –m “worte a readme file”
+4,查看历史日志
+git log
+5,返回上一个版本
+git reset --hard HEAD^
+6，回到指定的版本
+git reset --hard 1094a
+7，用来记录你的每一次命令
+git reglog 
+
+这样你就可以穿梭其中的任意的版本了
