@@ -17,3 +17,10 @@ git reset --hard 1094a
 git reglog 
 
 这样你就可以穿梭其中的任意的版本了
+
+8,提交后，用以下命令可以查看工作区和版本库里面最新版本的区别
+git diff HEAD -- readme.txt
+
+9，文件必须放在暂存区 才能提交到版本库里面
+10，你可以发现，Git会告诉你，git checkout -- file可以丢弃工作区的修改：
+git checkout -- readme.txt
