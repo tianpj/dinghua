@@ -22,5 +22,20 @@ git reglog
 git diff HEAD -- readme.txt
 
 9，文件必须放在暂存区 才能提交到版本库里面
+
 10，你可以发现，Git会告诉你，git checkout -- file可以丢弃工作区的修改：
 git checkout -- readme.txt
+
+11，如果你不想提交的文件在缓存区，可以撤销到工作区
+git reset HEAD readme.txt
+然后在丢弃工作区的修改
+git checkout -- readme.txt
+
+12,删除文件
+rm a.txt
+
+13,git status 可以查看你做了什么操作
+
+
+
+
