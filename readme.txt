@@ -58,7 +58,7 @@ git checkout -- test.txt
 	点“Add Key”，你就应该看到已经添加的Key：
 	
 15，上传文件到github
-git remote add origin https://github.com/tianpj/dinghua.git
+git remote add origin https://github.com/tianpj/git.git
 git push -u origin master
 
 16，现在本地提交就可以使用
