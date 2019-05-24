@@ -71,4 +71,9 @@ git push origin master
 18，下载一个远程库
 git clone git@github.com:michaelliao/gitskills.git
 
+19，分支管理
+	1，创建和合并分支
+	创建一个分支并且切换到该分支
+	git checkout -b dev
+
 
