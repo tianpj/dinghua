@@ -84,4 +84,4 @@ git clone git@github.com:michaelliao/gitskills.git
 
 	删除分支：git branch -d <name>
 
-
+Creating a new branch is quick & simple.
