@@ -107,4 +107,28 @@ Git分支十分强大，在团队开发中应该充分应用。
 但是，等等，当前正在dev上进行的工作还没有提交：
 
 可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作：
-$ git stash
+（1）保存当前分支的工作区文件  git stash
+（2）创建新的分支来修复bug 
+	确定在那个分支上修复就在切换到那个分支上（例如在master分支上修复bug）
+	先切换分支（git checkouot master）
+	在创建新的分支并切换（git checkouot -b isbug-01）
+（3）修复bug然后提交
+	git add readme.txt
+	git commit -m "修复bug" 
+（4）修复完成切换master分支，并合并分支，最后删除分支
+	git checkouot master(切换分支)
+	git merge --no-ff -m "修复bug" isbug-01 （合并分支）
+	git branch -d isbug-01 (删除分支
+（5）回到dev分支继续工作
+	git checkouot dev
+	(但是工作区那么干净怎么办？？？)
+	(用git stash list命令看看)
+（6）恢复工作区的文件
+	一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
+
+	另一种方式是用git stash pop，恢复的同时把stash内容也删了：
+总结：先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。
+	
+23，开发一个新feature，最好新建一个分支；
+
+如果要丢弃一个没有被合并过的分支，可以通过git branch -D <name>强行删除。
