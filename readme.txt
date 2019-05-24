@@ -1,21 +1,26 @@
 1,安装完成后，还需最后一步这是，在命令中输入
 git config –global user.name  “username”
 git config –global user.email   “email”
+
 2,打开需要管理的文件夹
 git init  
 就可以把这个目录变成git可以管理的仓库了，目录下生成  .git目录
+
 3，把一个文件放在git仓库里面
 git add readme.txt
 git commit –m “worte a readme file”
+
 4,查看历史日志
 git log
+
 5,返回上一个版本
 git reset --hard HEAD^
+
 6，回到指定的版本
 git reset --hard 1094a
+
 7，用来记录你的每一次命令
 git reglog 
-
 这样你就可以穿梭其中的任意的版本了
 
 8,提交后，用以下命令可以查看工作区和版本库里面最新版本的区别
@@ -83,8 +88,11 @@ git clone git@github.com:michaelliao/gitskills.git
 	合并某分支到当前分支：git merge <name>
 
 	删除分支：git branch -d <name>
+	
 20,当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
 
 解决冲突就是把Git合并失败的文件手动编辑为我们希望的内容，再提交。
 
 用git log --graph命令可以看到分支合并图。
+
+21,分支管理策略
