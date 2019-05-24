@@ -96,3 +96,8 @@ git clone git@github.com:michaelliao/gitskills.git
 用git log --graph命令可以看到分支合并图。
 
 21,分支管理策略
+Git分支十分强大，在团队开发中应该充分应用。
+合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，
+而fast forward合并就看不出来曾经做过合并。
+ git merge --no-ff -m "merge with no-ff" dev
+ git log（查看历史合并分支）
